@@ -3,24 +3,27 @@ let horas = document.querySelector(".horas__contador").textContent;
 let minutos = document.querySelector(".minutos__contador").textContent;
 let segundos = document.querySelector(".segundos__contador").textContent;
 
+contaSegundo();
 
-    function contaSegundo(){
-        console.log(segundos);
-        segundos = parseInt(segundos) - 1;
-        
+
+    function contaSegundo() {
+        var myInterval = setInterval(function(){
+            document.querySelector(".segundos__contador").textContent = segundos;
+        segundos--;
+
+        },1000);
+
+        setTimeout(function() {
+            clearInterval(myInterval);
+            segundos = 59;
+            contaSegundo();
+            contaMinuto();
+        },60000)
     }
-    setInterval(contaSegundo, 1000);
-    clearInterval(contaSegundo, 0)
-
-/*for(segundos == 41; segundos>=0 ; segundos--) {
-
-    function ContaSegundo(){
-        segundos = parseInt(segundos)-1;
-        console.log(segundos);
-        setTimeout(ContaSegundo, 1000);
+    function contaMinuto() {
+        minutos--;
+        console.log(minutos);
     }
-    
-    
-    
-}*/
+
+
 
