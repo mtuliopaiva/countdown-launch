@@ -8,26 +8,46 @@
         <link rel="shortcut icon" type="image/jpng" href="./assets/img/favicon-32x32.png" alt="">
         <title>Countdown Launch</title>
 
-        <link href="./normalize.css" rel="stylesheet">
-        <link href="./reset.css" rel="stylesheet">
+        <link href="./assets/normalize.css" rel="stylesheet">
+        <link href="./assets/reset.css" rel="stylesheet">
         <link href="./assets/style.css" rel="stylesheet">
+        
 
     </head>
     <body>
         <main>
-            <h1>We're launching soon</h1>
-            <p class="dias__contador">01</p>
-            <p class="dias__titulo">Days</p>
+            <section class="conteudo">
 
-            <p class="horas__contador">01</p>
-            <p class="horas__titulo">Hours</p>
+                <div class="conteudo__titulo">
+                    <h1 class="titulo">we're launching soon</h1>
+                </div>
 
-            <p class="minutos__contador">02</p>
-            <p class="minutos__titulo">Minutes</p>
+                <div class="conteudo__principal">
+                    <div class="principal__dias">
+                        <p class="dias__contador">08</p>
+                        <p class="dias__titulo">days</p>
+                    </div>
 
-            <p class="segundos__contador">60</p>
-            <p class="segundos__titulo">Seconds</p>
+                    <div class="principal__horas">
+                        <p class="horas__contador">23</p>
+                        <p class="horas__titulo">hours</p>
+                    </div>
+
+                    <div class="principal__minutos">
+                        <p class="minutos__contador">55</p>
+                        <p class="minutos__titulo">minutes</p>
+                    </div>
+
+                    <div class="principal__segundos">
+                        <p class="segundos__contador">41</p>
+                        <p class="segundos__titulo">seconds</p>
+                    </div>
+                </div>
+        </section>
         </main>
+        <footer class="rodape">
+            <img class="img__montanhas" src="./assets/img/pattern-hills.svg">
+        </footer>
         <script src="./main.js"></script>
     </body>
 </html>

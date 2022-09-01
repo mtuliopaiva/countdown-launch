@@ -52,12 +52,12 @@ contaSegundo();
                 controle--;
                 console.log(controle);
             }
-        },100);
+        },1000);
 
         setTimeout(function() {
             clearInterval(myInterval);
             console.log("TIME UP");
-        },total*100)
+        },total*1000)
     }
 
 

@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Red Hat';
+    src: url('./font/RedHatText-VariableFont_wght.ttf') format('truetype');
+  }
+.titulo, .dias__titulo, .horas__titulo, .minutos__titulo, .segundos__titulo {
+    font-family: RedHatText-VariableFont_wght;
+    text-transform: uppercase;
+}
+
+.titulo{
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 2rem;
+}
+.dias__titulo, .horas__titulo, .minutos__titulo, .segundos__titulo {
+    color: #8486a9;
+    padding: 0 1rem;
+    font-size: 1rem;
+}
+.conteudo{
+    background-image: url('./img/bg-stars.svg');
+    background-color: #191a24;
+    padding-top: 8%;
+    padding-bottom: 8%;
+    /* height:500px;
+    width: 100%; */
+}
+
+.conteudo__principal{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+.dias__contador, .horas__contador, .minutos__contador, .segundos__contador {
+    color: #fb6087;
+    font-size: 3rem
+}
+footer{
+    background-color: #191a24;
+}
+.img__montanhas{
+    width: 100%;
+}
