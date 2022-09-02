@@ -4,7 +4,7 @@ let minutos = document.querySelector(".minutos__contador").textContent;
 let segundos = document.querySelector(".segundos__contador").textContent;
 var total = parseInt(dias*24*60*60) + parseInt(horas*60*60) + parseInt(minutos*60) + parseInt(segundos);
 var controle = total;
-console.log(total);
+//console.log(total);
 contaSegundo();
 
 
@@ -46,17 +46,19 @@ contaSegundo();
                 }
             }
             else{
+                
                 segundos--;
                 document.querySelector(".segundos__contador").textContent = segundos;
                 
+                
                 controle--;
-                console.log(controle);
+                //console.log(controle); controlando a contagem
             }
         },1000);
 
         setTimeout(function() {
             clearInterval(myInterval);
-            console.log("TIME UP");
+            //console.log("TIME UP");
         },total*1000)
     }
 

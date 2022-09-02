@@ -49,3 +49,13 @@ footer{
 .img__montanhas{
     width: 100%;
 }
+.social__media{
+    padding: 0 2%;
+    position: absolute;
+    top: 85%;
+    left: 580px;
+    
+}
+.face-icon path:hover, .pint-icon path:hover, .insta-icon path:hover{
+    fill: #fb6087;
+}
