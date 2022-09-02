@@ -53,9 +53,40 @@ footer{
     padding: 0 2%;
     position: absolute;
     top: 85%;
-    left: 580px;
-    
+    left: 580px;  
 }
 .face-icon path:hover, .pint-icon path:hover, .insta-icon path:hover{
     fill: #fb6087;
+}
+/*Design Mobile*/
+@media screen and (max-width: 440px ) {
+
+    .conteudo{
+        width: auto;
+        height:100vh;
+    }
+    .conteudo__principal{
+        position: absolute;
+        top: 112px;
+        left: 22.828px;
+    }
+    .titulo{
+        font-size: 1.5rem;
+        position: absolute;
+        top: 112px;
+        left: 52.3125px;
+    }
+    .social__media{
+        position: absolute;
+        top: 580px;
+        left: 150px;  
+    }
+    .img__montanhas{
+        position: absolute;
+        left: 0px;
+        top: 532px;
+        height: 100px;
+    }
+
+    
 }
