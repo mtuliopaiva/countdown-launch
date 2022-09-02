@@ -84,9 +84,19 @@ footer{
     .img__montanhas{
         position: absolute;
         left: 0px;
-        top: 796px;
-        height: 200px;
-    }
+        top: 532px;
+        height: 100px;
+    }  
+}
+@media screen and (max-width: 1024px ) {
 
-    
+    .conteudo{
+        width: auto;
+        height:100vh;
+    }
+    .social__media{
+        position: absolute;
+        top: 850px;
+        left: 450px;  
+    } 
 }
